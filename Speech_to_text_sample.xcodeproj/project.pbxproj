@@ -11,6 +11,7 @@
 		64733B9E27599E530019B1CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64733B9D27599E530019B1CE /* ContentView.swift */; };
 		64733BA027599E550019B1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64733B9F27599E550019B1CE /* Assets.xcassets */; };
 		64733BA327599E550019B1CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64733BA227599E550019B1CE /* Preview Assets.xcassets */; };
+		64733BAA2759A15F0019B1CE /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64733BA92759A15F0019B1CE /* SpeechRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		64733B9D27599E530019B1CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64733B9F27599E550019B1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64733BA227599E550019B1CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64733BA92759A15F0019B1CE /* SpeechRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				64733B9B27599E530019B1CE /* Speech_to_text_sampleApp.swift */,
 				64733B9D27599E530019B1CE /* ContentView.swift */,
+				64733BA92759A15F0019B1CE /* SpeechRecorder.swift */,
 				64733B9F27599E550019B1CE /* Assets.xcassets */,
 				64733BA127599E550019B1CE /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64733B9E27599E530019B1CE /* ContentView.swift in Sources */,
+				64733BAA2759A15F0019B1CE /* SpeechRecorder.swift in Sources */,
 				64733B9C27599E530019B1CE /* Speech_to_text_sampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +276,9 @@
 				DEVELOPMENT_TEAM = F74N2TLAT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application uses a microphone.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This application recognizes speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +308,9 @@
 				DEVELOPMENT_TEAM = F74N2TLAT7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application uses a microphone.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This application recognizes speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
