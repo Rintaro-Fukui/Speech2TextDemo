@@ -14,7 +14,7 @@ final class SpeechRecorder: ObservableObject {
     @Published var audioText: String = ""
     @Published var audioRunning: Bool = false
     private var audioEngine = AVAudioEngine()
-    private var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
+    private var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     
@@ -45,7 +45,7 @@ final class SpeechRecorder: ObservableObject {
     }
     
     func startRecording() throws {
-        self.speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
+        self.speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en"))!
         let audioSession = AVAudioSession.sharedInstance()
         try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
         try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
